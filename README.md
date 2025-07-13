@@ -3,8 +3,11 @@ A USB Rubber Ducky project using Raspberry Pi Pico that emulates keystroke injec
 
 💻 Requirements
 - Raspberry Pi Pico
+![Raspberry Pi Pico](Images/RaspberryPi Pico.jpg)
+*Raspberry Pi Pico board used for the project*
 - MicroPython or CircuitPython
 - USB M to Micro USM M Adapter
+![Raspberry Pi Pico](Images/USB Adapter.jpg)
 
 ## 📂 Project Structure
 - `payloads/` - DuckyScript-style scripts
