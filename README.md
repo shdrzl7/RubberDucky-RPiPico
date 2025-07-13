@@ -29,7 +29,6 @@ This technique can:
 
 ## ⚠️ Important:
 BadUSB attacks are very powerful and dangerous. This project is for educational and authorized testing purposes only. Always get permission before using such tools in real environments.
----
 
 ## 💻 Requirements
 - Raspberry Pi Pico (RM11.88)
