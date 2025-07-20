@@ -31,10 +31,22 @@ This technique can:
 BadUSB attacks are very powerful and dangerous. This project is for educational and authorized testing purposes only. Always get permission before using such tools in real environments.
 
 ## 💻 Requirements
-- Raspberry Pi Pico (RM11.88)
-<img src="Images/RaspberryPi%20Pico.jpg" alt="Raspberry Pi Pico" width="300"/>
-- USB M to Micro USM M Adapter (RM3.39)
-<img src="Images/USB%20Adapter.jpg" alt="Raspberry Pi Pico" width="300"/>
+<table>
+  <tr>
+    <td align="center">
+      <strong>Raspberry Pi Pico</strong><br>RM11.88<br>
+      <img src="Images/RaspberryPi%20Pico.jpg" alt="Raspberry Pi Pico" width="200"/>
+    </td>
+    <td align="center">
+      <strong>USB M to Micro USB M Adapter</strong><br>RM3.39<br>
+      <img src="Images/USB%20Adapter.jpg" alt="USB Adapter" width="200"/>
+    </td>
+    <td align="center">
+      <strong>Jumper Wires</strong><br>(for setup mode)<br>
+      <!-- No image for this item -->
+    </td>
+  </tr>
+</table>
 
 ## 📂 Project Structure
 - `Payloads/` - DuckyScript-style scripts
