@@ -32,9 +32,9 @@ BadUSB attacks are very powerful and dangerous. This project is for educational 
 
 ## 💻 Requirements
 - Raspberry Pi Pico (RM11.88)
-![Raspberry Pi Pico](Images/RaspberryPi%20Pico.jpg)
+<img src="Images/RaspberryPi%20Pico.jpg" alt="Raspberry Pi Pico" width="300"/>
 - USB M to Micro USM M Adapter (RM3.39)
-![USB Adapter](Images/USB%20Adapter.jpg)
+<img src="Images/USB%20Adapter.jpg" alt="Raspberry Pi Pico" width="300"/>
 
 ## 📂 Project Structure
 - `Payloads/` - DuckyScript-style scripts
@@ -65,7 +65,57 @@ BadUSB attacks are very powerful and dangerous. This project is for educational 
 12. Rename your desired payload to `payload.dd` and place it in the root of the CIRCUITPY drive.
 
 ## 🛠️ How to Use
-(To be filled in after project is done)
+
+By default, if a `payload.dd` file is present in the CIRCUITPY root, the Rubber Ducky script will run automatically when the device is plugged in.  
+⚠️ To prevent the script from executing on your own machine, enter **Setup Mode** first.
+
+### 🛡️ Entering Setup Mode
+
+To safely edit the payload without running it:
+- Connect **GPIO 1** (pin 2) to **GND** using a jumper wire.
+- This tells the device to skip running the payload and enter setup mode.
+
+**Setup Mode:**
+
+<img src="Images/setup-mode.jpg" alt="Raspberry Pi Pico" width="300"/>
+
+While in setup mode, you can:
+- Edit or replace the `payload.dd` file.
+- Modify or update any scripts on the device.
+
+Once editing is complete:
+- **Unplug the device**
+- **Remove the jumper wire**
+- Plug the device into a **target machine** — it will now execute the payload.
+
+---
+
+### 📄 Payloads
+
+You can find example payloads from:
+- 🔗 [Hak5 Official Payload Repo](https://github.com/hak5/usbrubberducky-payloads)
+- Or search any Rubber Ducky Payloads on GitHub for more community-created scripts
+- 📁 `Payloads/` folder in this repository
+
+Once you're confident, you can build your own custom payloads using basic **DuckyScript** commands:
+
+| Command   | Description         |
+|-----------|---------------------|
+| `STRING`  | Types the following text |
+| `DELAY`   | Waits for a given time (in milliseconds) |
+| `GUI R`   | Presses Win + R (Run) |
+| `SPACE`   | Presses the spacebar |
+| `ENTER`   | Presses Enter/Return |
+| `TAB`     | Presses the Tab key |
+
+> Example:
+> ```
+> GUI R  
+> DELAY 500  
+> STRING notepad  
+> ENTER  
+> STRING Hello from Rubber Ducky  
+> ```
 
 ## 🔒 Disclaimer
 For educational and authorized testing purposes only.
