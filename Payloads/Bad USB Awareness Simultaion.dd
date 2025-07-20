@@ -8,14 +8,14 @@ REM - Opens CMD to create "suspicious harmless activity" visual
 REM - Sends simulated incident email via Outlook to IT Department
 REM - This payload is for internal security training only
 
-DELAY 1000
+DELAY 3000
 
 REM === Open CMD ===
 GUI r
 DELAY 1000
 STRING cmd /k
 ENTER
-DELAY 1500
+DELAY 6000
 STRING color a
 ENTER
 DELAY 500
@@ -28,21 +28,21 @@ GUI r
 DELAY 800
 STRING outlook
 ENTER
-DELAY 7000
+DELAY 20500
 
 REM === Open New Email ===
 CTRL n
 DELAY 1000
 
 REM === Add recipient ===
-STRING it-support@enproserve.com
+STRING shad@enproserve.com
 ENTER
 DELAY 2000
+ENTER
 TAB
 DELAY 100
 TAB
 DELAY 100
-TAB
 
 REM === Add subject ===
 STRING Bad USB Attack Awareness Campaign
@@ -50,6 +50,7 @@ ENTER
 DELAY 100
 
 REM === Move to body and write message ===
+TAB
 DELAY 100
 STRING Dear IT Department,
 ENTER
