@@ -35,7 +35,7 @@ CTRL n
 DELAY 1000
 
 REM === Add recipient ===
-STRING shad@enproserve.com
+STRING <recipient@email.com>
 ENTER
 DELAY 2000
 ENTER
@@ -74,3 +74,4 @@ DELAY 1000
 
 REM === Send Email ===
 ALT s
+
