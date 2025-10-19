@@ -100,6 +100,17 @@ Once editing is complete:
 - **Remove the jumper wire**
 - Plug the device into a **target machine** — it will now execute the payload.
 
+### 📦 Storing & Selecting Multiple Payloads (testing/dev)
+
+If you're still developing or testing and want to store up to four payloads on a single Pico, you can add multiple .dd files and select which one to run by grounding a corresponding GPIO pin.
+
+**GPIO → payload mapping**
+Place these files in the root of the CIRCUITPY drive, and ground the listed GPIO pin to tell the script which payload to run:
+- payload.dd → GP4
+- payload2.dd → GP5
+- payload3.dd → GP10
+- payload4.dd → GP11
+
 ---
 
 ### 📄 Payloads
@@ -111,14 +122,17 @@ You can find example payloads from:
 
 Once you're confident, you can build your own custom payloads using basic **DuckyScript** commands:
 
-| Command   | Description         |
-|-----------|---------------------|
-| `STRING`  | Types the following text |
-| `DELAY`   | Waits for a given time (in milliseconds) |
-| `GUI R`   | Presses Win + R (Run) |
-| `SPACE`   | Presses the spacebar |
-| `ENTER`   | Presses Enter/Return |
-| `TAB`     | Presses the Tab key |
+| Command             | Description         |
+|---------------------|---------------------|
+| `STRING`            | Types the following text |
+| `DELAY`             | Waits for a given time (in milliseconds) |
+| `GUI R`             | Presses Win + R (Run) |
+| `SPACE`             | Presses the spacebar |
+| `ENTER`             | Presses Enter/Return |
+| `TAB`               | Presses the Tab key |
+| `CTRL SHIFT ENTER`  | Press to run as admin |
+| `ALT F4`            | Close Window |
+| `LEFTARROW`         | Presses the left arrow key |
 
 > Example:
 > ```
