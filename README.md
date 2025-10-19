@@ -42,7 +42,7 @@ BadUSB attacks are very powerful and dangerous. This project is for educational 
       <img src="Images/USB%20Adapter.jpg" alt="USB Adapter" width="200"/>
     </td>
     <td align="center">
-      <strong>Jumper Wires</strong><br>(for setup mode)<br>
+      <strong>Jumper Wires</strong><br>(for mode/payload selection)<br>
       <!-- No image for this item -->
     </td>
   </tr>
