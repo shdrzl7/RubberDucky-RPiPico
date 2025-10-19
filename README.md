@@ -111,6 +111,10 @@ Place these files in the root of the CIRCUITPY drive, and ground the listed GPIO
 - payload3.dd → GP10
 - payload4.dd → GP11
 
+### 🔒 Final product: hide CIRCUITPY (no USB storage)
+
+When you’re finished developing and want the Pico to present only as an HID (so it won’t show up as a USB storage drive on the host), ground the dedicated GP15 pin  to disable the CIRCUITPY mass storage device at boot, so that the device will not enumerate as a USB storage on your target computer.
+
 ---
 
 ### 📄 Payloads
