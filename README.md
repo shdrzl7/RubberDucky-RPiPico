@@ -150,3 +150,6 @@ Once you're confident, you can build your own custom payloads using basic **Duck
 
 ## 🔒 Disclaimer
 For educational and authorized testing purposes only.
+
+## 📹 Video Demo
+[Reverse Shell Demo with Mitigation Steps](https://www.youtube.com/watch?v=33uOr2uezZ0) 
