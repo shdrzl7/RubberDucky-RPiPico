@@ -32,7 +32,7 @@ If you have physical access to the device or manage it via Intune:
     USB\VID_2E8A&PID_000A
     ```
 **Screenshot Example:**  
-<img src="Images/screenshot-intune.png" alt="Intune" width="500"/>
+<img src="../Images/screenshot-intune.png" alt="Intune" width="500"/>
 
 ### 🧱 Windows Group Policy (GPO)
 For domain-joined or standalone Windows devices:
@@ -44,7 +44,7 @@ For domain-joined or standalone Windows devices:
 1. **Prevent installation of devices that match any of these device IDs**  
    Add:
 **Screenshot Example:**  
-<img src="Images/screenshot-gpo.png" alt="GPO" width="500"/>
+<img src="../Images/screenshot-gpo.png" alt="GPO" width="500"/>
 
 **How to Get Device ID:**
 1. Plug in the suspected USB device.  
@@ -55,4 +55,4 @@ For domain-joined or standalone Windows devices:
 6. Copy the line containing `VID_XXXX&PID_YYYY`.
 
 **Screenshot Example:**  
-<img src="Images/screenshout-device-manager.png" alt="Device Manager" width="500"/>
+<img src="../Images/screenshout-device-manager.png" alt="Device Manager" width="500"/>
